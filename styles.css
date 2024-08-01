@@ -1,0 +1,196 @@
+/* General Styles */
+body {
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+    color: #16325c;
+    line-height: 1.5;
+}
+
+/* Header Styles */
+.slds-global-header {
+    background-color: #0070d2;
+}
+
+.slds-global-header__logo img {
+    max-height: 40px;
+}
+
+.slds-navigation a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.slds-navigation a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Hero Section */
+#home {
+    background-color: #f3f2f2;
+    padding: 4rem 2rem;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Services Section */
+#services {
+    background-color: #E6F2FF;
+    padding: 4rem 2rem;
+}
+
+#services .slds-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E6F2FF;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#services .slds-card:nth-child(5n+1) {
+    background-color: #F2F6FE; /* Cloud Blue */
+}
+
+#services .slds-card:nth-child(5n+2) {
+    background-color: #F3F2F2; /* Palette Gray 1 */
+}
+
+#services .slds-card:nth-child(5n+3) {
+    background-color: #ECF7E5; /* Palette Green 15 */
+}
+
+#services .slds-card:nth-child(5n+4) {
+    background-color: #F6F2FB; /* Palette Purple 15 */
+}
+
+#services .slds-card:nth-child(5n+5) {
+    background-color: #FEFAF2; /* Palette Orange 95 */
+}
+
+#services .slds-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#services .slds-card__header {
+    background-color: #E6F2FF;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+#services .slds-card__header h3 {
+    margin-left: 1rem;
+}
+
+.service-logo {
+    max-width: 40px;
+    max-height: 40px;
+    object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+    #services .slds-col {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    #services .slds-col {
+        flex-basis: 100%;
+    }
+}
+
+/* Update this in your existing CSS */
+#services .slds-col:nth-child(n+4) {
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    #services .slds-col:nth-child(n+1) {
+        margin-top: 1rem;
+    }
+}
+
+/* Blog Section */
+#blog .slds-card {
+    height: 100%;
+}
+
+#blog .slds-card__footer {
+    padding-top: 0.5rem;
+}
+
+/* Contact Form */
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact .slds-form-element {
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #16325c;
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .slds-navigation ul {
+        flex-direction: column;
+    }
+
+    .slds-navigation li {
+        margin-bottom: 0.5rem;
+    }
+
+    #home {
+        text-align: center;
+    }
+
+    #home .slds-button {
+        margin-bottom: 2rem;
+    }
+
+    .hero-image {
+        margin-top: 2rem;
+    }
+}
+
+/* Accessibility */
+.slds-button:focus,
+.slds-input:focus,
+.slds-textarea:focus {
+    outline: 2px solid #1589ee;
+    outline-offset: 2px;
+}
+
+/* Animation */
+.slds-button {
+    transition: transform 0.2s ease;
+}
+
+.slds-button:hover {
+    transform: translateY(-2px);
+}
